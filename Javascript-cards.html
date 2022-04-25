@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basix-Dom</title>
+    <style type="text/css">
+        body{
+            background-color: aquamarine;
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+        <input type="text" placeholder="Enter your Nmae" class="one" id="one" />
+        <br>
+        <input type="number" placeholder="Age" class="one" id="two">
+        <br>
+        <select id="three" class="one">
+            <option value="">Gender</option>
+            <option value="Male">M</option>
+            <option value="Female">F</option>
+        </select>
+        <br>
+        <input type="email" class="one" placeholder="email" id="four">
+        <br>
+        <input type="number" class="one" placeholder="number" id="five">
+        <br>
+    <button>Submit</button>
+</body>
+</html>
+<script type="text/javascript">
+    document.querySelector("button").addEventListener("click",callout);
+    function callout(){
+        var a=document.querySelector("#one").value;
+        var b=document.querySelector("#two").value;
+        var c=document.querySelector("#three").value;
+         var d=document.querySelector("#four").value;
+        var e=document.querySelector("#five").value;
+        console.log(a);
+        console.log(b);
+        console.log(c);
+        console.log(d);
+        console.log(e);
+    }
+</script>
