@@ -1,0 +1,252 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/10126c2929.js" crossorigin="anonymous"></script>
+    <style>
+      #header{
+        text-align: center;
+      }
+      #blogs-container{
+        margin: 0%;
+        padding: 0%;
+        width: 100%;
+        height: 400x;
+        /* border: 2px solid black; */
+        background-color: white;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-areas:"one two three";
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+      }
+      #blogs-container div{
+       margin: auto;
+      }
+      #blogs-container div img{
+       width: 300px;
+       height: 200px;
+      }
+      #blogs-container div p{
+       margin-left: 10px;
+       color: gray;
+      }
+      #blogs-container div h3{
+        margin-left: 10px;
+      }
+      #blogs-container>:nth-child(1){
+        width: 300px;
+        height: 300px;
+        /* border: 2px solid black; */
+        grid-area: one;
+        border-radius: 10px;
+        
+      }
+      #blogs-container>:nth-child(2){
+        grid-area: two;
+        width: 300px;
+        height: 300px;
+        border-radius: 10px;
+        /* border: 2px solid black; */
+        
+        
+      }
+      #blogs-container>:nth-child(3){
+        width: 300px;
+        height: 300px;
+        border-radius: 10px;
+        /* border: 2px solid black; */
+        grid-area: three;
+       
+        
+      }
+
+      #catagory-container{
+        margin-top: 30px;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(2,300px);
+
+      }
+      #catagory-container div{
+        border: 2px solid black;
+        border-radius: 5px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+      }
+      .far fa-bullseye-arrow{
+        font-size: large;
+      }
+      #catagory-container div>img{
+        width: 100px;
+        height: 100px;
+        margin-left: 120px;
+        margin-top: 10px;
+        border-radius: 30px;
+      }
+      #catagory-container div>img+h3{
+        text-align: center;
+      }
+      #catagory-container div>img>h3+p{
+        text-align: center;
+      }
+
+
+
+
+
+
+
+
+
+        /* Medium screens */
+        @media all and (min-width:451px) and (max-width:750px){
+          #blogs-container{
+        margin: 0%;
+        padding: 0%;
+        width: 100%;
+        height: auto;
+        /* border: 2px solid black; */
+        background-color: white;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-areas:"one one"
+                            "two two"
+                            "three three";
+                            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+      }
+
+      
+      #catagory-container{
+        margin-top: 30px;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,300px);
+
+      }
+      #catagory-container div>img{
+        width: 100px;
+        height: 100px;
+        margin-left: 80px;
+        margin-top: 10px;
+        border-radius: 30px;
+      }
+            
+      }
+
+
+        /* Small Screens */
+        @media all and (min-width:100px) and (max-width:450px){
+          #catagory-container{
+        margin-top: 30px;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(1,300px);
+
+      }
+      #blogs-container{
+        margin: 0%;
+        padding: 0%;
+        width: 100%;
+        height: auto;
+        /* border: 2px solid black; */
+        background-color: white;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-areas:"one one"
+                            "two two"
+                            "three three";
+                            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+      }
+            
+        }
+    </style>
+  </head>
+
+  <body>
+    <div id="header">
+      <h1>Our Blog Posts</h1>
+    </div>
+    <div id="blogs-container">
+      <!-- All the Blogs will be here  -->
+      <div>
+        <!-- the images, date and the blog heading will be here  -->
+        <img src="https://mellow-pasca-c1ba34.netlify.app/one.webp" alt="">
+        <p>29 January 2019</p>
+        <h3>Architceture Art Mordern</h3>
+
+      </div>
+      <div>
+        <!-- the images, date and the blog heading will be here  -->
+        <img src="https://mellow-pasca-c1ba34.netlify.app/two.webp" alt="">
+        <p>29 January 2019</p>
+        <h3>Architceture Art Mordern</h3>
+
+      </div>
+      <div>
+        <!-- the images, date and the blog heading will be here  -->
+        <img src="https://mellow-pasca-c1ba34.netlify.app/three.webp" alt="">
+        <p>29 January 2019</p>
+        <h3>Architceture Art Mordern</h3>
+      </div>
+    </div>
+    <div id="catagory-container">
+      <!-- All the boxes for blog catagory goes here  -->
+      <div>
+        <!-- The image, h3 tag, p tag etc will be here  -->
+        <img src="https://mellow-pasca-c1ba34.netlify.app/web.webp" alt="">
+        <h3>Creative Desigh</h3>
+        <p>Far for away, Benhind the word mountains, far from the conuntries vokalia</p>
+      </div>
+      <div>
+        <!-- The image, h3 tag, p tag etc will be here  -->
+        <img src="https://mellow-pasca-c1ba34.netlify.app/web.webp" alt="">
+        <h3>Creative Desigh</h3>
+        <p>Far for away, Benhind the word mountains, far from the conuntries vokalia</p>
+      </div>
+      <div>
+        <!-- The image, h3 tag, p tag etc will be here  -->
+        <img src="https://mellow-pasca-c1ba34.netlify.app/web.webp" alt="">
+        <h3>Creative Desigh</h3>
+        <p>Far for away, Benhind the word mountains, far from the conuntries vokalia</p>
+      </div>
+      <div>
+        <!-- The image, h3 tag, p tag etc will be here  -->
+        <img src="https://mellow-pasca-c1ba34.netlify.app/web.webp" alt="">
+        <h3>Creative Desigh</h3>
+        <p>Far for away, Benhind the word mountains, far from the conuntries vokalia</p>
+      </div>
+      <div>
+        <!-- The image, h3 tag, p tag etc will be here  -->
+        <img src="https://mellow-pasca-c1ba34.netlify.app/web.webp" alt="">
+        <h3>Creative Desigh</h3>
+        <p>Far for away, Benhind the word mountains, far from the conuntries vokalia</p>
+      </div>
+      <div>
+        <!-- The image, h3 tag, p tag etc will be here  -->
+        <img src="https://mellow-pasca-c1ba34.netlify.app/web.webp" alt="">
+        <h3>Creative Desigh</h3>
+        <p>Far for away, Benhind the word mountains, far from the conuntries vokalia</p>
+      </div>
+      <div>
+        <!-- The image, h3 tag, p tag etc will be here  -->
+        <img src="https://mellow-pasca-c1ba34.netlify.app/web.webp" alt="">
+        <h3>Creative Desigh</h3>
+        <p>Far for away, Benhind the word mountains, far from the conuntries vokalia</p>
+      </div>
+      <div>
+        <!-- The image, h3 tag, p tag etc will be here  -->
+        <img src="https://mellow-pasca-c1ba34.netlify.app/web.webp" alt="">
+        <h3>Creative Desigh</h3>
+        <p>Far for away, Benhind the word mountains, far from the conuntries vokalia</p>
+      </div>
+    </div>
+    <div>
+    </div>
+  </body>
+</html>
