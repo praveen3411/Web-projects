@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We Session Flex + Position</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    .card {
+        margin-top: 10px;
+        width: 400px;
+        border: 1px solid rgb(224, 224, 224);
+    }
+
+    .card-img {
+        width: 100%;
+        height: 500px;
+    }
+
+    .footer {
+        border-top: 1px solid black;
+    }
+
+    h3,
+    p {
+        margin: 5px 0px;
+    }
+
+    .box-img {
+        width: 100%;
+    }
+    .container{
+        width: 100%;
+        height: 680px;
+        border: 2px solid black;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+    #don{
+        padding: 5px 10px 5px 10px;
+        border-radius: 5px;
+        background-color: rgb(169, 209, 224);
+        margin-left: 15px;
+        position: relative;
+        bottom: 50px;
+        border: none;
+        cursor: pointer;
+    }
+    #don1{
+        padding: 5px 10px 5px 10px;
+        border-radius: 5px;
+        background-color: rgb(169, 209, 224);
+        position: relative;
+        bottom: 50px;
+        border: none;
+        cursor: pointer;
+    }
+    #don:hover{
+        background-color: aqua;
+    }
+    #don1:hover{
+        background-color: aqua;
+    }
+    .card-heading{
+        padding-left: 10px;
+    }
+    .card-heading+.card-text{
+        padding-left: 10px;
+    }
+    .card-text{
+        padding-left: 10px;
+        font-size: 20px;
+    }
+</style>
+<style>
+
+</style>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="box-img">
+                <img src="https://raw.githubusercontent.com/Sourav12061999/nykaafashion/main/nykaa-clone/Kids%20Page/Images/img3.jpg"
+                    alt="" class="card-img">
+                    <button id="don">BESTSELLER</button> <button id="don1">Offer</button>
+                <!-- <p>Bestseller</p> -->
+            </div>
+            <h3 class="card-heading">Half Sleve</h3>
+            <p class="card-text">Boys Half sleves for casual using it is very soft and smooth </p>
+            <h3>💰 2000</h3>
+            <P class="card-text">1-2 Years, 2-3 Years 3-4, years</P>
+        </div>
+        <div class="card">
+            <div class="box-img">
+                <img src="https://raw.githubusercontent.com/Sourav12061999/nykaafashion/main/nykaa-clone/Kids%20Page/Images/img4.jpg"
+                    alt="" class="card-img">
+                    <button id="don">BestSeller</button> <button id="don1">Offer</button>
+                <!-- <p>Bestseller</p> -->
+            </div>
+            <h3 class="card-heading">Kids Garments</h3>
+            <p class="card-text">For kids it's looks like a buaty queen just wear it and rob it</p>
+            <h3>💰 2560</h3>
+            <P class="card-text">1-2 Years, 2-3 Years 3-4, years</P>
+            
+        </div>
+        <div class="card">
+            <div class="box-img">
+                <img src="https://raw.githubusercontent.com/Sourav12061999/nykaafashion/main/nykaa-clone/Kids%20Page/Images/img5.jpg"
+                    alt="" class="card-img">
+                    <button id="don">BestSeller</button> <button id="don1">Offer</button>
+                <!-- <p>Bestseller</p> -->
+            </div>
+            <h3 class="card-heading">Marrage Clothes</h3>
+            <p class="card-text">Just wear it, it's looks attractive and looks great for boys</p>
+            <h3>💰 1600</h3>
+            <P class="card-text">1-2 Years, 2-3 Years 3-4, years</P>
+        </div>
+    </div>
+</body>
+
+</html>
