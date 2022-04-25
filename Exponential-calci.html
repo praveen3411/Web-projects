@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exponent</title>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <input type="number" id="one">
+    <input type="number" id="two">
+    <button>Submit</button>
+    <br>
+    <br>
+    <br>
+    <input type="number" id="three">
+    <input type="number" id="four">
+    <button id="b">Click here to find the exponet</button>
+    <p></p>
+</body>
+</html>
+<script type="text/javascript">
+    document.querySelector("button").addEventListener("click",output);
+    function output(){
+        var a=document.querySelector("#one").value;
+        var b=document.querySelector("#two").value;
+        alert(eval(a*b))
+    }
+
+
+    document.querySelector("#b").addEventListener("click",outputone);
+    function outputone(){
+        var a=document.querySelector("#three").value;
+        var b=document.querySelector("#four").value;
+
+        var don=1;
+        for(var i=0; i<b; i++){
+            don=a*don;
+        }
+        document.querySelector("p").innerText=don;
+         
+    }
+</script>
