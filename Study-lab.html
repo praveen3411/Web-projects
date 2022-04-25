@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study-lab</title>
+    <style type="text/css">
+        body{
+            margin: 0%;
+            padding: 0%;
+        }
+        .container{
+            width: 100%;
+            height: 60px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            flex-grow: 0;
+            /* border: 2px solid black; */
+            background-color: white;
+
+        }
+        .one{
+            width: 100px;
+            height: 50px;
+            padding-top: 10px;
+            /* border: 2px solid black; */
+        }
+        .one:nth-child(1){
+            flex-grow: 2;
+        }
+        img[src="logo.svg"]{
+            margin-left: 10%;
+        }
+        .one>a{
+            display: flex;
+            justify-content: center;
+            padding-top: 10px;
+        }
+        a:link{
+            text-decoration: none;
+            font-size: 20px;
+        }
+        a:hover{
+            color: blue;
+        }
+        .col{
+            color: black;
+            font-weight: bolder;
+        }
+        #container1{
+            width: 100%;
+            height: 600px;
+            /* border: 2px solid black; */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .rendu{
+            width: 600px;
+            height: 600px;
+            /* border: 2px solid black; */
+            padding: 10px;
+            box-sizing: border-box;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        }
+        br+img{
+            width: 300px;
+            height: 200px;
+            margin-left: 20px;
+        }
+        .rendu p{
+            font-size: 16px;
+            text-align: justify;
+            color: black;
+        }
+        #po{
+            font-size: 20px;
+            font-weight: bold;
+            color: blue;
+        }
+        #dis{
+            width: 100%;
+            height: 580px;
+            /* border: 2px solid black; */
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-around;
+
+        }
+        #dis .four{
+            width: 200px;
+            height: 250px;
+            /* border: 2px solid black; */
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+            padding: 10px;
+        }
+        .four>img{
+            width: 50px;
+            height: 50px;
+            border-radius: 20px;
+            box-shadow: 2px 2px 2px rgb(234, 210, 210);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="one">
+                    <img src="file:///C:/Users/prave/OneDrive/Desktop/Projects/study-lab/logo.svg" alt="">
+                </div>
+                <div class="one">
+                    <a href="" class="col">Home</a>
+                </div>
+                <div class="one">
+                    <a href="" class="col">About</a>
+                </div>
+                <div class="one">
+                    <a href="" class="col">Course</a>
+                </div>
+                <div class="one">
+                    <a href="" class="col">Instructor</a>
+                </div>
+                <div class="one">
+                    <a href="" class="col">Blog</a>
+                </div>
+                <div class="one">
+                    <a href="" class="col">Contact</a>
+                </div>
+                <div class="one">
+                </div>
+            </div>
+            <hr>
+        </nav>
+    </header>
+    <div id="container1">
+        <div class="rendu">
+            <p id="po">Welcome To Masai</p>
+            <h1>We are here to grow to grow you as a professional</h1>
+            <br>
+            <p>Lorem, ipsum bo ab ullam earum minima nihil, deserunt maxime eligendi!
+            Illo tempore, ab nobis quam iste similique quae impedit rerum libero repudiandae corporis debitis et ea possimus iure incidunt eum doloremque veniam. Tenetur cum quaerat ipsam architecto! Illum, sapiente et?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum aspernatur voluptas pariatur, eligendi iste quam ipsum quo fuga asperiores aperiam neque suscipit illum commodi animi provident adipisci repellendus rem?
+            </p>
+            <br>
+            <img src="https://imgs.search.brave.com/8YbvxroMyUormMKPKs7aEKOb1o3WMzifAo7vQ7g3t5Q/rs:fit:711:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5T/eWtNaWgzSmc2VGhU/c2lPMVA4a09nSGFF/OCZwaWQ9QXBp" alt="">
+        </div>
+        <div class="rendu">
+            <div id="dis">
+                <div class="four">
+                    <img src="https://imgs.search.brave.com/8YbvxroMyUormMKPKs7aEKOb1o3WMzifAo7vQ7g3t5Q/rs:fit:711:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5T/eWtNaWgzSmc2VGhU/c2lPMVA4a09nSGFF/OCZwaWQ9QXBp" alt="">
+                    <h3>Top Quality Content</h3>
+                    <p>Masai is the good institute for people who are looking to develop our skills and working professionals can also join this masai school and up-skill fast</p>
+                    <br>
+                </div>
+                <div class="four">
+                    <img src="https://imgs.search.brave.com/8YbvxroMyUormMKPKs7aEKOb1o3WMzifAo7vQ7g3t5Q/rs:fit:711:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5T/eWtNaWgzSmc2VGhU/c2lPMVA4a09nSGFF/OCZwaWQ9QXBp" alt="">
+                    <h3>High Skilled Instructor</h3>
+                    <p>Masai is the good institute for people who are looking to develop our skills and working professionals can also join this masai school and up-skill fast</p>
+                </div>
+                <div class="four">
+                    <img src="https://imgs.search.brave.com/8YbvxroMyUormMKPKs7aEKOb1o3WMzifAo7vQ7g3t5Q/rs:fit:711:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5T/eWtNaWgzSmc2VGhU/c2lPMVA4a09nSGFF/OCZwaWQ9QXBp" alt="">
+                    <h3>World class Quiz</h3>
+                    <p>Masai is the good institute for people who are looking to develop our skills and working professionals can also join this masai school and up-skill fast</p>
+                </div>
+                <div class="four">
+                    <img src="https://imgs.search.brave.com/8YbvxroMyUormMKPKs7aEKOb1o3WMzifAo7vQ7g3t5Q/rs:fit:711:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5T/eWtNaWgzSmc2VGhU/c2lPMVA4a09nSGFF/OCZwaWQ9QXBp" alt="">
+                    <h3>Get Certified</h3>
+                    <p>Masai is the good institute for people who are looking to develop our skills and working professionals can also join this masai school and up-skill fast</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
