@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web 18 Unit-2 C3</title>
+    <style>
+      #reports{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(5,auto);
+        grid-gap: 10px;
+      }
+      #reports>div{
+        padding: 10px;
+        box-sizing: border-box;
+        box-shadow: 2px 2px 3px rgb(189, 185, 185);
+        margin-top: 50px;
+      }
+      form{
+        text-align: center;
+      }
+      h1,p,h3{
+        text-align: center;
+      }
+      button{
+        transform: translateX(120px);
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div id="container">
+      <div>
+        <h1>Masai Evaluations Tracker</h1>
+        <form id="form">
+            <!-- When this form get submitted update the DOM According to the question -->
+          <input placeholder="Name" id="name" type="text"  />
+          <select id="batch">
+            <option value="WEB16">WEB16</option>
+            <option value="WEB17">WEB17</option>
+            <option value="WEB18">WEB18</option>
+          </select>
+          <select id="type">
+            <option value="DSA">DSA</option>
+            <option value="Coding">Coding</option>
+          </select>
+          <input placeholder="Student Code" id="stuent_code" type="text" />
+          <select id="unit">
+            <option value="Unit-1">Unit-1</option>
+            <option value="Unit-2">Unit-2</option>
+            <option value="Unit-3">Unit-3</option>
+            <option value="Unit-4">Unit-4</option>
+          </select>
+          <select id="sprint">
+            <option value="Sprint-1">Sprint-1</option>
+            <option value="Sprint-2">Sprint-2</option>
+            <option value="Sprint-3">Sprint-3</option>
+            <option value="Sprint-4">Sprint-4</option>
+          </select>
+          <input placeholder="Score(0-10)" id="score" type="number" />
+          <input type="submit" />
+        </form>
+      </div>
+      <div id="reports">
+        <!-- All the cards that get appended with Javascript on form submit goes here -->
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+document.querySelector("form").addEventListener("submit",myfunction);
+function myfunction(){
+  event.preventDefault();
+  var nam=document.querySelector("#name").value;
+
+  var bat=document.querySelector("#batch").value;
+
+  var typ=document.querySelector("#type").value;
+
+  var stycode=document.querySelector("#stuent_code").value
+
+  var uni=document.querySelector("#unit").value;
+
+  var spr=document.querySelector("#sprint").value;
+
+  var sco=document.querySelector("#score").value;
+
+  var box=document.createElement("div");
+
+  var one=document.createElement("h1");
+  one.innerText=nam;
+
+  var two=document.createElement("p");
+  two.innerText=bat;
+
+  var three=document.createElement("p");
+  three.innerText=typ;
+  
+  var four=document.createElement("p");
+  four.innerText=stycode;
+
+  var five=document.createElement("p");
+  five.innerText=uni;
+
+  var six=document.createElement("p");
+  six.innerText=spr;
+  
+  var seven=document.createElement("p");
+  seven.innerText=sco;
+
+  var eight=document.createElement("h3");
+  if(sco<=3){
+    eight.innerText="Learning";
+    eight.style.color="red";
+  }
+  else if(sco>=4 && sco<=7){
+    eight.innerText="Acheving";
+    eight.style.color="orange";
+  }
+  else if(sco>=8 && sco<=10){
+    eight.innerText="Mastery";
+    eight.style.color="green";
+  }
+  else{
+    eight.innerText="Fail";
+  }
+
+  var del=document.createElement("button");
+  del.innerText="DELETE";
+  del.addEventListener("click",man);
+  function man(){
+    event.target.parentNode.remove();
+  }
+  box.append(one,two,three,four,five,six,seven,eight,del);
+
+  document.querySelector("#reports").append(box);
+}
+
+</script>
+
