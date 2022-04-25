@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select id="content">
+        <option value="">Continent</option>
+        <option value="india">India</option>
+        <option value="unitited states of america">United States of America</option>
+        <option value="china">China</option>
+        <option value="nepal">Nepal</option>
+        <option value="australia">Australia</option>
+        <option value="france">France</option>
+        <option value="germany">Germany</option>
+        <option value="south africa">South Africa</option>
+        <option value="nigeria">Nigeria</option>
+        <option value="mexico">Mexico</option>
+        <option value="argentina">Argentina</option>
+        <option value="brazil">Brazil</option>
+        <option value="canada">Canada</option>
+        <option value="singapore">Singapore</option>
+        <option value="sweden">Sweden</option>
+    </select>
+    <button>Sumbit</button>
+</body>
+</html>
+
+<script>
+  document.querySelector("button").addEventListener("click",myfun);
+  function myfun(){
+      var x=document.querySelector("#content").value;
+      switch(x){
+          case "india": alert("Aisa")
+              break;
+              case "unitied unitited states of america": alert("North Americaa")
+                  break;
+                  case "china":alert("Asia");
+                  break;
+                  case "nepal":alert("Asia");
+                  break;
+                  case "australia":alert("oceania");
+                  break;
+                  case "france":alert("western-europe");
+                  break;
+                  case "germany":alert("Europe");
+                  break;
+                  case "south africa":alert("Africa");
+                  break;
+                  case "nigeria":alert("Africa");
+                  break;
+                  case "mexico":alert("North America");
+                  break;
+                  case "argentina":alert("South America");
+                  break;
+                  case "brazil":alert("North America");
+                  break;
+                  case "canada":alert("North Americia");
+                  break;
+                  case "singapore":alert("Asia");
+                  break;
+                  case "sweden":alert("Europe");
+                  break;
+                  default:alert("you didn't choose any thing");
+      }
+  }
+
+</script>
