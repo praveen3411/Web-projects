@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <style>
+       #container{
+           width: 90%;
+           margin: auto;
+       }
+       h1{
+           text-align: center;
+       }
+       #container>div{
+           width: 400px;
+           height: 300px;
+           background-color: white;
+           border: 2px solid black;
+           border-radius: 10px;
+           margin: auto;
+           box-sizing: border-box;
+           margin: auto;
+           padding: 20px;
+       }
+       form{
+           display: flex;
+           justify-content: center;
+           flex-direction: column;
+           padding: 10px;
+       }
+       input,select{
+           margin: 5px;
+           text-align: center;
+       }
+       #products{
+           display: grid;
+           grid-template-columns: repeat(4,1fr);
+           grid-template-rows: repeat(4,auto);
+           grid-gap: 10px;
+       }
+       #products>div{
+           border-radius: 10px;
+           box-shadow: 2px 2px 2px rgb(152, 151, 151);
+           text-align: center;
+       }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div>
+            <h1>Add Some Products</h1>
+            <form>
+                <select id="one">
+                    <option value="">Add-products</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="furniture">Furniture</option>
+                    <option value="home">Home</option>
+                    <option value="appliance">Appliance</option>
+                    <option value="books">Books</option>
+                </select>
+                <input type="text" id="two" placeholder="Product-title">
+                <input type="text" id="three" placeholder="product-description">
+                <input type="number" id="four" placeholder="product-price">
+                <input type="submit" value="submit">
+            </form>
+        </div>
+    </div>
+    <div id="products">
+        <!-- append here -->
+    </div>
+</body>
+</html>
+
+<script type="text/javascript">
+    document.querySelector("form").addEventListener("submit",myfunction)
+    function myfunction(){
+        event.preventDefault()
+       var sel=document.querySelector("#one").value;
+
+       var product1=document.querySelector("#two").value;
+
+       var product2=document.querySelector("#three").value;
+
+       var product3=document.querySelector("#four").value;
+
+      var box=document.createElement("div");
+
+      var cata=document.createElement("h2");
+      cata.innerText=sel;
+
+      var titl=document.createElement("p");
+      titl.innerText=product1;
+
+      var descri=document.createElement("p");
+      descri.innerText=product2;
+
+      var pric=document.createElement("p");
+      pric.innerText=product3;
+
+      var but=document.createElement("button");
+      but.innerText="DELETE";
+      but.addEventListener("click",fun);
+      function fun(){
+          event.target.parentNode.remove();
+      }
+
+      box.append(cata,titl,descri,pric,but)
+      document.querySelector("#products").append(box);
+    }
+</script>
