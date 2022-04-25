@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driving Licence</title>
+    <style type="text/css">
+        body{
+            background-color: aqua;
+        }
+        #one{
+            text-align: center;
+        }
+
+    </style>
+    <script type="text/javascript">
+        function agechecker(){
+            var age=document.getElementById("out").value;
+            if(age>18){
+                document.getElementById("ra").innerText="You can drive in India!"
+            }
+            else if(age<18){
+                document.getElementById("ra").innerText="You can't drive in India";
+            }
+            else{
+                document.getElementById("ra").innerText="You are just old enough to drive in India!"
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="one">
+        <input type="text" value="" id="out">
+        <button onclick="agechecker()">Submit</button>
+        <br>
+        <br>
+        <p id="ra"></p>
+    </div>
+</body>
+</html>
