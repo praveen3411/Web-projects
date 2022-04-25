@@ -1,0 +1,257 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #header{
+        text-align: center;
+      }
+      #doctors{
+        display: grid;
+        grid-gap: 10px;
+        margin: auto;
+        width: 80%;
+        height: auto;
+        box-sizing: border-box;
+        padding: 10px;
+        grid-template-areas:"one two three four" ;
+      }
+      #doctors>div:nth-child(1){
+        grid-area: one;
+        width: 220px;
+        height: auto;
+        margin: auto;
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      }
+      #doctors>div:nth-child(2){
+        grid-area: two;
+        width: 220px;
+        height: auto;
+        height: auto;
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      }
+      #doctors>div:nth-child(3){
+        grid-area: three;
+        width: 220px;
+        height: auto;
+        margin: auto;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      }
+      #doctors>div:nth-child(4){
+        grid-area: four;
+        width: 220px;
+        height: auto;
+        margin: auto;
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      }
+      #doctors>div>img{
+        width: 220px;
+        height: 150px;
+      }
+      img+h3{
+        text-align: center;
+        text-transform: capitalize;
+      }
+      img+h3+h6{
+        text-align: center;
+        font-weight: bold;
+      }
+      img+h3+h6+p{
+        text-align: center;
+      }
+     .buttons-div{
+       display: flex;
+       justify-content: space-around;
+     }
+     .buttons-div>button:nth-child(1){
+       padding: 5px;
+       border-radius: 10px;
+       background-color:white;
+       border: none;
+       color: aqua;
+     }
+     .buttons-div>button:nth-child(2){
+       padding: 5px;
+       border-radius: 10px;
+       background-color: orange;
+       color: white;
+       border: none;
+     }
+     #service{
+       display: grid;
+       grid-gap: 10px;
+       width: 80%;
+       padding: 10px;
+       margin: auto;
+       grid-template-columns: repeat(3,1fr);
+       grid-template-rows: repeat(2,250px);
+     }
+     #service>div>img{
+       margin-left: 40%;
+       margin-top: 50px;
+     }
+     h5{
+       text-align: center;
+     }
+     h5+p{
+       text-align: center;
+     }
+      /* Medium screens */
+      @media all and (min-width: 451px) and (max-width: 750px) {
+        #doctors{
+        display: grid;
+        grid-gap: 10px;
+        margin: auto;
+        width: 80%;
+        height: auto;
+        box-sizing: border-box;
+        padding: 10px;
+        grid-template-areas:"one two"
+                            "three four" ;
+      }
+      #service{
+       display: grid;
+       grid-gap: 10px;
+       width: 80%;
+       padding: 10px;
+       margin: auto;
+       grid-template-columns: repeat(2,1fr);
+       grid-template-rows: repeat(3,250px);
+     }
+      }
+      /* Small screens */
+      @media all and (min-width: 100px) and (max-width: 450px) {
+        #doctors{
+        display: grid;
+        grid-gap: 10px;
+        margin: auto;
+        width: 80%;
+        height: auto;
+        box-sizing: border-box;
+        padding: 10px;
+        grid-template-areas:"one"
+                            "two"
+                            "three"
+                            "four" ;
+      }
+      #service{
+       display: grid;
+       grid-gap: 10px;
+       width: 80%;
+       padding: 10px;
+       margin: auto;
+       grid-template-columns: repeat(1,1fr);
+       grid-template-rows: repeat(6,250px);
+     }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <h1>Our Specialist</h1>
+      <p>
+        Green above he cattle god saw day multiply under fill in the cattle fowl
+        a all, living, <br> tree word link available in the service for subdue fruit.
+      </p>
+    </div>
+    <!-- Top-section -->
+    <div id="doctors">
+      <div>
+        <img src="https://cheerful-peony-82d317.netlify.app/doctor1.jpg.webp" alt="doctor" />
+        <h3>Ethel-davis</h3>
+        <h6>sr.Faculity dats-cience</h6>
+        <p>If you are looking at blank cassetess on the web, you may be very confused at the..</p>
+        <!-- keep image,h3,h6 here -->
+        <div class="buttons-div">
+          <button>Know More</button>
+          <button>Book Now</button>
+        </div>
+      </div>
+      <div>
+        <!-- keep image,h3,h6 here -->
+        <img src="https://cheerful-peony-82d317.netlify.app/doctor1.jpg.webp" alt="doctor">
+        <h3>Dand-Mories</h3>
+        <h6>sr.faculity plastic surgery</h6>
+        <p>If you are looking at blank cassetess on the web, you may be very confused at the..</p>
+        <div class="buttons-div">
+          <button>Know More</button>
+          <button>Book Now</button>
+        </div>
+      </div>
+      <div>
+        <!-- keep image,h3,h6 here -->
+        <img src="https://cheerful-peony-82d317.netlify.app/doctor1.jpg.webp" alt="doctor">
+        <h3>Align-Board</h3>
+        <h6>sr.faculity plastic surgery</h6>
+        <p>If you are looking at blank cassetess on the web, you may be very confused at the..</p>
+        <div class="buttons-div">
+          <button>Know More</button>
+          <button>Book Now</button>
+        </div>
+      </div>
+      <div>
+        <!-- keep image,h3,h6 here -->
+        <img src="https://cheerful-peony-82d317.netlify.app/doctor1.jpg.webp" alt="doctor">
+        <h3>jeson-limit</h3>
+        <h6>sr.faculity plastic surgery</h6>
+        <p>If you are looking at blank cassetess on the web, you may be very confused at the..</p>
+        <div class="buttons-div">
+          <button>Know More</button>
+          <button>Book Now</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom section  -->
+    <div id="service">
+      <div>
+        <!-- keep image,h5,p here -->
+        <img src="https://cheerful-peony-82d317.netlify.app/bottom_132437.jpeg" alt="bottom_132437">
+        <h5>Teeth Whitening</h5>
+        <p>In pretium neque a libero congue. Elit diam lectus.prasent lacinia vitae sit mattis mollis maximus</p>
+      </div>
+      <div>
+        <!-- keep image,h5,p here -->
+        <img src="https://cheerful-peony-82d317.netlify.app/bottom_132437.jpeg" alt="bottom_132437">
+        <h5>Teeth Whitening</h5>
+        <p>In pretium neque a libero congue. Elit diam lectus.prasent lacinia vitae sit mattis mollis maximus</p>
+      </div>
+      <div>
+        <!-- keep image,h5,p here -->
+        <img src="https://cheerful-peony-82d317.netlify.app/bottom_132437.jpeg" alt="bottom_132437">
+        <h5>Teeth Whitening</h5>
+        <p>In pretium neque a libero congue. Elit diam lectus.prasent lacinia vitae sit mattis mollis maximus</p>
+      </div>
+      <div>
+        <!-- keep image,h5,p here -->
+        <img src="https://cheerful-peony-82d317.netlify.app/bottom_132437.jpeg" alt="bottom_132437">
+        <h5>Teeth Whitening</h5>
+        <p>In pretium neque a libero congue. Elit diam lectus.prasent lacinia vitae sit mattis mollis maximus</p>
+      </div>
+      <div>
+        <!-- keep image,h5,p here -->
+        <img src="https://cheerful-peony-82d317.netlify.app/bottom_132437.jpeg" alt="bottom_132437">
+        <h5>Teeth Whitening</h5>
+        <p>In pretium neque a libero congue. Elit diam lectus.prasent lacinia vitae sit mattis mollis maximus</p>
+      </div>
+      <div>
+        <!-- keep image,h5,p here -->
+        <img src="https://cheerful-peony-82d317.netlify.app/bottom_132437.jpeg" alt="bottom_132437">
+        <h5>Teeth Whitening</h5>
+        <p>In pretium neque a libero congue. Elit diam lectus.prasent lacinia vitae sit mattis mollis maximus</p>
+      </div>
+    </div>
+  </body>
+</html>
